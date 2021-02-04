@@ -75,7 +75,7 @@ img {
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
-.mail-item {
+.auth-nav .item:not(:last-child) {
   margin-right: 50px;
 }
 .page-header {
@@ -153,6 +153,7 @@ img {
   text-transform: uppercase;
 }
 .button {
+  border: none;
   color: var(--hero-text-color);
   background: var(--bcg-color-button);
   font-family: Roboto;
@@ -288,10 +289,6 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.container-footer {
-  margin-bottom: 20px;
-  display: block;
-}
 .footer .logo {
   display: block;
   padding-bottom: 20px;
@@ -300,26 +297,29 @@ img {
   color: #ffffff;
 }
 .address {
-  margin-bottom: 9px;
   color: #ffffff;
   font-style: normal;
   text-decoration: none;
 }
-.address-map {
-  margin-bottom: 9px;
+.contacts-list .item {
   color: #ffffff;
   text-decoration: none;
 }
-.mail-tel .link {
+.contacts-list .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.tel,
+.mail {
   display: block;
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
-.mail-tel .link:not(:last-child) {
-  margin-bottom: 9px;
+.tel:hover,
+.tel:focus {
+  color: var(--accent--color);
 }
-.mail-tel .link:hover,
-.mail-tel .link:focus {
+.mail:hover,
+.mail:focus {
   color: var(--accent--color);
 }
 
@@ -328,21 +328,15 @@ img {
   background: #ffffff;
   letter-spacing: 0.03em;
 }
-.section-botton {
-  padding-top: 100px;
-  padding-bottom: 25px;
-}
-.section-botton .list {
+.button-list {
   display: flex;
-  flex-wrap: wrap;
-  margin-left: -8px;
-  margin-top: -8px;
-  align-items: center;
   justify-content: center;
 }
-.section-botton .item {
-  margin-left: 8px;
-  margin-top: 8px;
+.filter-button-container {
+  margin-bottom: 50px;
+}
+.button-list .item:not(:last-child) {
+  margin-right: 8px;
 }
 .filter-botton {
   padding: 6px 22px;
@@ -363,7 +357,7 @@ img {
 }
 /* ПРОЕКТЫ */
 .projects-section {
-  padding-top: 25px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .projects {
@@ -372,7 +366,7 @@ img {
   margin-left: -30px;
   margin-top: -30px;
 }
-.projects-section .item {
+.projects .item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc(100% / 3 - 30px);
